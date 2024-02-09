@@ -16,9 +16,9 @@ resource "aws_instance" "myawsserver" {
   key_name = "kk-import-ansible"
 
   tags = {
-    Name = "Raman-DevOps-batch-server"
+    Name = "kk-DevOps-batch-server"
     env = "Production"
-    owner = "Raman Khanna"
+    owner = "kk-jt-ansbile"
   }
   provisioner "local-exec" {
     command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /tmp/inv"
