@@ -6,12 +6,12 @@
         name: httpd
         state: installed
     - name: configure
-      shell: "echo Hello guyss from Raman Khanna !! > /var/www/html/index.html"
+      shell: "echo Hello guyss from ansible installed apache server !! > /var/www/html/index.html"
     - name: start service
       service:
         name: httpd
         state: started
     - name: add user
       user:
-        name: raman
+        name: kk-ansible
         state: present
